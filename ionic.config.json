@@ -1,0 +1,7 @@
+{
+  "name": "appNaruto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
