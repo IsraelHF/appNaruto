@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'characters',
+    loadChildren: () => import('./view/characters/characters.module').then( m => m.CharactersPageModule)
+  },
+  {
+    path: 'characters-details',
+    loadChildren: () => import('./view/characters-details/characters-details.module').then( m => m.CharactersDetailsPageModule)
+  },
+  {
+    path: 'character-details',
+    loadChildren: () => import('./view/character-details/character-details.module').then( m => m.CharacterDetailsPageModule)
+  },
 ];
 
 @NgModule({
